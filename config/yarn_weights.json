@@ -1,0 +1,66 @@
+{
+  "Lace": {
+    "name": "Lace",
+    "minNeedleSizeMetric": 1.5,
+    "maxNeedleSizeMetric": 2.25,
+    "minHookSizeMetric": 1.6,
+    "maxHookSizeMetric": 2.25,
+    "categories": ["Fingering"]
+  },
+  "Super Fine": {
+    "name": "Super Fine",
+    "minNeedleSizeMetric": 2.25,
+    "maxNeedleSizeMetric": 3.25,
+    "minHookSizeMetric": 2.25,
+    "maxHookSizeMetric": 3.5,
+    "categories": ["Sock", "Baby"]
+  },
+  "Fine": {
+    "name": "Fine",
+    "minNeedleSizeMetric": 3.25,
+    "maxNeedleSizeMetric": 3.75,
+    "minHookSizeMetric": 3.5,
+    "maxHookSizeMetric": 4.5,
+    "categories": ["Sport", "Baby"]
+  },
+  "Light": {
+    "name": "Light",
+    "minNeedleSizeMetric": 3.75,
+    "maxNeedleSizeMetric": 4.5,
+    "minHookSizeMetric": 4.5,
+    "maxHookSizeMetric": 5.5,
+    "categories": ["DK", "Light", "Worsted"]
+  },
+  "Medium": {
+    "name": "Medium",
+    "minNeedleSizeMetric": 4.5,
+    "maxNeedleSizeMetric": 5.5,
+    "minHookSizeMetric": 5.5,
+    "maxHookSizeMetric": 6.5,
+    "categories": ["Worsted", "Afghan", "Aran"]
+  },
+  "Bulky": {
+    "name": "Bulky",
+    "minNeedleSizeMetric": 5.5,
+    "maxNeedleSizeMetric": 8.0,
+    "minHookSizeMetric": 6.5,
+    "maxHookSizeMetric": 9.0,
+    "categories": ["Chunky", "Craft", "Rug"]
+  },
+  "Super Bulky": {
+    "name": "Super Bulky",
+    "minNeedleSizeMetric": 8.0,
+    "maxNeedleSizeMetric": 12.75,
+    "minHookSizeMetric": 9.0,
+    "maxHookSizeMetric": 15.0,
+    "categories": ["Roving"]
+  },
+  "Jumbo": {
+    "name": "Jumbo",
+    "minNeedleSizeMetric": 12.75,
+    "maxNeedleSizeMetric": 99.0,
+    "minHookSizeMetric": 15.0,
+    "maxHookSizeMetric": 99.0,
+    "categories": ["Roving"]
+  }
+}

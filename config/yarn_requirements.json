@@ -1,0 +1,82 @@
+{
+  "baby hat": {
+    "Lace": { "min": 229, "max": 297 },
+    "Super Fine": { "min": 229, "max": 297 },
+    "Fine": { "min": 183, "max": 229 },
+    "Light": { "min": 183, "max": 206 },
+    "Medium": { "min": 114, "max": 183 },
+    "Bulky": { "min": 114, "max": 137 },
+    "Super Bulky": { "min": 27, "max": 55 },
+    "Jumbo": { "min": 18, "max": 37 }
+  },
+  "adult hat": {
+    "Lace": { "min": 229, "max": 297 },
+    "Super Fine": { "min": 229, "max": 297 },
+    "Fine": { "min": 183, "max": 229 },
+    "Light": { "min": 183, "max": 206 },
+    "Medium": { "min": 114, "max": 183 },
+    "Bulky": { "min": 114, "max": 137 },
+    "Super Bulky": { "min": 27, "max": 55 },
+    "Jumbo": { "min": 18, "max": 37 }
+  },
+  "baby sweater": {
+    "Lace": { "min": 3085, "max": 3085 },
+    "Super Fine": { "min": 1600, "max": 2400 },
+    "Fine": { "min": 1371, "max": 2057 },
+    "Light": { "min": 1029, "max": 1486 },
+    "Medium": { "min": 869, "max": 1029 },
+    "Bulky": { "min": 754, "max": 1029 },
+    "Super Bulky": { "min": 754, "max": 1029 },
+    "Jumbo": { "min": 549, "max": 823 }
+  },
+  "adult sweater": {
+    "Lace": { "min": 3085, "max": 3085 },
+    "Super Fine": { "min": 1600, "max": 2400 },
+    "Fine": { "min": 1371, "max": 2057 },
+    "Light": { "min": 1029, "max": 1486 },
+    "Medium": { "min": 869, "max": 1029 },
+    "Bulky": { "min": 754, "max": 1029 },
+    "Super Bulky": { "min": 754, "max": 1029 },
+    "Jumbo": { "min": 549, "max": 823 }
+  },
+  "socks": {
+    "Lace": { "min": 320, "max": 457 },
+    "Super Fine": { "min": 274, "max": 411 },
+    "Fine": { "min": 251, "max": 366 },
+    "Light": { "min": 251, "max": 343 },
+    "Medium": { "min": 229, "max": 320 },
+    "Bulky": { "min": 183, "max": 229 },
+    "Super Bulky": { "min": 160, "max": 183 },
+    "Jumbo": { "min": 137, "max": 160 }
+  },
+  "shawl": {
+    "Lace": { "min": 503, "max": 777 },
+    "Super Fine": { "min": 411, "max": 640 },
+    "Fine": { "min": 366, "max": 572 },
+    "Light": { "min": 343, "max": 503 },
+    "Medium": { "min": 320, "max": 457 },
+    "Bulky": { "min": 320, "max": 434 },
+    "Super Bulky": { "min": 274, "max": 366 },
+    "Jumbo": { "min": 229, "max": 320 }
+  },
+  "scarf": {
+    "Lace": { "min": 480, "max": 754 },
+    "Super Fine": { "min": 411, "max": 572 },
+    "Fine": { "min": 343, "max": 457 },
+    "Light": { "min": 343, "max": 457 },
+    "Medium": { "min": 229, "max": 343 },
+    "Bulky": { "min": 229, "max": 343 },
+    "Super Bulky": { "min": 114, "max": 183 },
+    "Jumbo": { "min": 91, "max": 137 }
+  },
+  "baby blanket": {
+    "Lace": { "min": 1371, "max": 1486 },
+    "Super Fine": { "min": 1143, "max": 1371 },
+    "Fine": { "min": 1029, "max": 1143 },
+    "Light": { "min": 914, "max": 1029 },
+    "Medium": { "min": 800, "max": 914 },
+    "Bulky": { "min": 686, "max": 800 },
+    "Super Bulky": { "min": 572, "max": 686 },
+    "Jumbo": { "min": 457, "max": 640 }
+  }
+}

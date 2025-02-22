@@ -1,8 +1,14 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import utils.inventory.YarnInventory;
-import utils.yarn.Yarn;
-import utils.yarn.YarnWeight;
+import cz.cuni.mff.glavovaa.yarninv.utils.inventory.YarnInventory;
+import cz.cuni.mff.glavovaa.yarninv.utils.yarn.Yarn;
+import cz.cuni.mff.glavovaa.yarninv.utils.yarn.YarnWeight;
+import org.junit.jupiter.api.io.TempDir;
+
+import java.io.IOException;
+import java.io.Writer;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -10,8 +16,14 @@ class YarnInventoryTests {
     private YarnInventory inventory;
 
     @BeforeEach
-    void setUp() {
-        inventory = new YarnInventory("src/main/resources/dummy.json"); // Initialize an empty inventory
+    void setUp(@TempDir Path tempDir) throws IOException {
+        Path tempInventoryFile = tempDir.resolve("dummy.json");
+
+        try (Writer writer = Files.newBufferedWriter(tempInventoryFile)) {
+            writer.write("[]"); // represents an empty inventory
+        }
+
+        inventory = new YarnInventory(tempInventoryFile);
     }
 
     @Test

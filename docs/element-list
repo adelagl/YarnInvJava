@@ -1,5 +1,5 @@
-app
-utils
-utils.inventory
-utils.project
-utils.yarn
+cz.cuni.mff.glavovaa.yarninv.app
+cz.cuni.mff.glavovaa.yarninv.utils
+cz.cuni.mff.glavovaa.yarninv.utils.inventory
+cz.cuni.mff.glavovaa.yarninv.utils.project
+cz.cuni.mff.glavovaa.yarninv.utils.yarn

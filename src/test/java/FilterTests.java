@@ -1,12 +1,16 @@
-package utils.inventory;
 
+import cz.cuni.mff.glavovaa.yarninv.utils.inventory.YarnInventory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import utils.yarn.Yarn;
-import utils.yarn.YarnWeight;
+import cz.cuni.mff.glavovaa.yarninv.utils.yarn.Yarn;
+import cz.cuni.mff.glavovaa.yarninv.utils.yarn.YarnWeight;
+import org.junit.jupiter.api.io.TempDir;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Writer;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -15,14 +19,15 @@ class FilterTests {
     private YarnInventory inventory;
 
     @BeforeEach
-    void setUp() throws IOException {
-        // Reset the inventory file before each test to avoid interference
-        try (FileWriter writer = new FileWriter("./src/main/resources/inventory.json")) {
-            writer.write("[]"); // Ensure inventory starts empty
-        }
-        inventory = new YarnInventory("./src/main/resources/inventory.json");
+    void setUp(@TempDir Path tempDir) throws IOException {
+        Path tempInventoryFile = tempDir.resolve("dummy.json");
 
-        // Populate inventory with test yarns
+        try (Writer writer = Files.newBufferedWriter(tempInventoryFile)) {
+            writer.write("[]"); // represents an empty inventory
+        }
+
+        inventory = new YarnInventory(tempInventoryFile);
+
         inventory.addItem(new Yarn("Brand A", "Red", 100, new YarnWeight("Medium", 4.5, 5.5, 5.5, 6.5, List.of("Worsted"))));
         inventory.addItem(new Yarn("Brand B", "Blue", 150, new YarnWeight("Fine", 3.5, 4.5, 4.5, 5.5, List.of("Sport"))));
         inventory.addItem(new Yarn("Brand C", "Red", 200, new YarnWeight("Bulky", 5.5, 8.0, 6.5, 9.0, List.of("Chunky"))));
@@ -55,7 +60,7 @@ class FilterTests {
         List<Yarn> brandAYarns = inventory.filter(yarn -> yarn.getBrand().equalsIgnoreCase("Brand A"));
 
         // Assert
-        assertEquals(2, brandAYarns.size(), "Should return 2 yarns from 'Brand A'.");
+        assertEquals(2, brandAYarns.size());
         assertTrue(brandAYarns.stream().allMatch(y -> y.getBrand().equalsIgnoreCase("Brand A")), "All results should be from 'Brand A'.");
     }
 

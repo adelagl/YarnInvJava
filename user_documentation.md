@@ -37,7 +37,7 @@ If running manually:
 
 javac  -d  out  src/main/java/app/App.java
 
-java  -cp  out  app.App
+java  -cp  out  cz.cuni.mff.glavovaa.yarninv.app.App
 
 ```
 

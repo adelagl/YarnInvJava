@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"app"},{"l":"utils"},{"l":"utils.inventory"},{"l":"utils.project"},{"l":"utils.yarn"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"cz.cuni.mff.glavovaa.yarninv.app"},{"l":"cz.cuni.mff.glavovaa.yarninv.utils"},{"l":"cz.cuni.mff.glavovaa.yarninv.utils.inventory"},{"l":"cz.cuni.mff.glavovaa.yarninv.utils.project"},{"l":"cz.cuni.mff.glavovaa.yarninv.utils.yarn"}];updateSearchResults();
